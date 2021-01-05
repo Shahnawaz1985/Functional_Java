@@ -1,13 +1,9 @@
 package com.eric.sample.function.email.verifier;
 
 import java.util.regex.Pattern;
+
 import com.eric.sample.function.intrf.Generic_Functional_Intrf;
 
-/**
- * 
- * @author Shahnawaz
- *
- */
 public class EmailValidator_v3 {
 	
 	final static Pattern emailPattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$");

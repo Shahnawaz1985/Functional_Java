@@ -1,10 +1,5 @@
 package com.eric.sample.function.email.verifier;
 
-/**
- * 
- * @author Shahnawaz
- *
- */
 public interface Result_v1<T> {
 	
 	void bind(Effect<T> success, Effect<String> failure);

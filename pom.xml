@@ -75,8 +75,6 @@
 					<artifactId>findbugs-maven-plugin</artifactId>
 					<version>3.0.6-SNAPSHOT</version>
 				</plugin>
-				
-				<!-- pmd plugin added -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-pmd-plugin</artifactId>
