@@ -39,7 +39,7 @@ public class CollectionUtilities {
 		return newList;
 	}
 	
-	public static <T> T heaf(List<T> list) {
+	public static <T> T heap(List<T> list) {
 		if(list.size() == 0) {
 			throw new IllegalArgumentException("head of empty list identified.");
 		}
