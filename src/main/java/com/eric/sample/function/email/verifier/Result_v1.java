@@ -4,15 +4,15 @@ public interface Result_v1<T> {
 	
 	void bind(Effect<T> success, Effect<String> failure);
 	
-	public static <T> Result_v1<T> failure(String message){
+	static <T> Result_v1<T> failure(String message){
 		return new Failure<>(message);
 	}
 	
-	public static <T> Result_v1<T> success(T value){
+	static <T> Result_v1<T> success(T value){
 		return new Success<>(value);
 	}
 	
-	public class Success<T> implements Result_v1<T> {
+	class Success<T> implements Result_v1<T> {
 		
 		private final T value;
 		
@@ -26,7 +26,7 @@ public interface Result_v1<T> {
 		}
 	}
 	
-	public class Failure<T> implements Result_v1<T>{
+	class Failure<T> implements Result_v1<T>{
 		
 		private final String errorMessage;
 		

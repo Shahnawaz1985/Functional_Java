@@ -2,9 +2,9 @@ package com.eric.sample.function.email.verifier;
 
 public interface Result {
 	
-	public class Success implements Result {}
+	class Success implements Result {}
 	
-	public class Failure implements Result {
+	class Failure implements Result {
 		
 		private final String errorMessage;
 		
