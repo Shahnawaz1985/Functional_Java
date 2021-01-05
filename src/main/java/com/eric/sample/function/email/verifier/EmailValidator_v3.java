@@ -28,15 +28,16 @@ public class EmailValidator_v3 {
 					
 	static Executable validate(String emailContent) {
 		Result result = emailChecker.apply(emailContent);
-		return result instanceof Result.Success ? () -> sendVerificationEmail(emailContent) : () -> logError(((Result.Failure)result).getMessage());
+		
+		return (result instanceof Result.Success) ? () -> sendVerificationEmail(emailContent) : () -> logError(((Result.Failure)result).getMessage());
 	}
 	
 	
 	public static void main(String[] args) {
-		validate("this.is@my.email").exec();
-		validate(null).exec();
-		validate("").exec();
-		validate("john.doe@gmail.com").exec();
+		validate("this.is@my.email").exec();;
+		validate(null).exec();;
+		validate("").exec();;
+		validate("john.doe@gmail.com").exec();;
 	}
 
 }
