@@ -40,7 +40,7 @@ public class EmailValidator_v3 {
 		validate("this.is@my.email").exec();
 		validate(null).exec();
 		validate("").exec();
-		validate("john.doe@gmail.com").exec();		
+		validate("john.doe@gmail.com").exec();
 	}
 
 }
