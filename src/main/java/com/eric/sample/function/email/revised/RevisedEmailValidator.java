@@ -28,7 +28,11 @@ public class RevisedEmailValidator {
 				mcase(() -> !emailPattern.matcher(s).matches(), () -> Result_v1.<String>failure("email " + s + " is invalid"))
 				
 			);
-			
+	
+	/**
+	 * 	
+	 * @param args args
+	 */
 	public static void main(String[] args) {
 		emailChecker.apply("this.is@my.email").bind(success, failure);
 		emailChecker.apply(null).bind(success, failure);
