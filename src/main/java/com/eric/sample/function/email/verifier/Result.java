@@ -1,5 +1,8 @@
 package com.eric.sample.function.email.verifier;
 
+/*
+ * Result Interface
+ */
 public interface Result {
 	
 	class Success implements Result {}

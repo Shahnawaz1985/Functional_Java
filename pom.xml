@@ -70,6 +70,7 @@
 						</execution>
 					</executions>
 				</plugin>
+				<!-- pmd plugin added for pmd verifier -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-pmd-plugin</artifactId>
