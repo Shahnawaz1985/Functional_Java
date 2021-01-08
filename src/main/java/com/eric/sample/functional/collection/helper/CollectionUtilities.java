@@ -1,4 +1,4 @@
-package com.eric.sample.functional.helper;
+package com.eric.sample.functional.collection.helper;
 
 import java.util.ArrayList;
 import java.util.Arrays;

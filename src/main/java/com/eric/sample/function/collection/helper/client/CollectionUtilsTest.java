@@ -1,7 +1,8 @@
 package com.eric.sample.function.collection.helper.client;
 
 import java.util.List;
-import com.eric.sample.functional.helper.CollectionUtilities;
+
+import com.eric.sample.functional.collection.helper.CollectionUtilities;
 
 /**
  * 
