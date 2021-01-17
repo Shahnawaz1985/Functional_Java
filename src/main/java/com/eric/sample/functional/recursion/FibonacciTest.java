@@ -58,6 +58,9 @@ public class FibonacciTest {
 		List<BigInteger> list = fibo_(list(BigInteger.ZERO), BigInteger.ONE, 
 										BigInteger.ZERO, BigInteger.valueOf(number)).eval();
 		String fibo_str =  makeString(list, ", ");
+		
+		System.out.println("Length of Fibonnaci string : "+fibo_str.length());
+		
 		fibo_str = fibo_str.substring(0, fibo_str.length()-1);
 		return fibo_str;
 	}
